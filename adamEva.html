@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam - Eva</title>
+</head>
+<body>
+    <script>
+        function Apple(){
+            this.weight = 10;
+            this.decrease = function(){
+                this.weight -= 1;
+            }
+            this.isEmpty = function(){
+                if(this.weight === 0) return true;
+                else return false;
+            }
+            this.getWeight = function(){
+                return this.weight;
+            }
+        }
+        function Human(name,gender,weight,apple){
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+            this.isMale = function(){
+                return this.gender;
+            }
+            this.setGender = function(newGender){
+                 this.gender = newGender;
+            }
+            this.checkApple = function(apple){
+                 if(apple.weight>0) return true;
+                 else return false;
+            }
+            this.eat = function(apple){
+                 apple.weight -= 1;
+            }
+            this.say = function(string){
+                 console.log(this.name +':'+ string);
+            }
+            this.getName = function(){
+                return this.name;
+            }
+            this.setName = function(newName){
+                this.name = newName;
+            }
+            this.getWeightHuman = function(){
+                return this.weight;
+            }
+            this.setWeight = function(newWeight){
+                this.weight = newWeight;
+            }
+        }
+        let apple1 = new Apple();
+        let apple2 = new Apple();
+        let eva = new Human('Eva',false,50,apple1);
+        let adam = new Human('Adam',true,60,apple2);
+        adam.say(' Eva, I love you');
+        eva.say(' Me too');
+        adam.eat(apple2);
+        let a = apple2.getWeight();
+        console.log(a);
+    </script>
+</body>
+</html>
