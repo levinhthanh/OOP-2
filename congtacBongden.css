@@ -1,0 +1,21 @@
+.show{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    
+}
+#switch{
+    width: 400px;
+    height: 400px;
+}
+#lamp{
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+}
+#button{
+    width: 100px;
+    height: 30px;
+    margin-left: 130px;
+    font-weight: bold;
+}
