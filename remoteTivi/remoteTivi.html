@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều khiển Tivi</title>
+    <link rel="stylesheet" href="remoteTivi.css">
+</head>
+
+<body>
+    <img id="chan1" src="chan1.png" hidden>
+    <img id="chan2" src="chan2.png" hidden>
+    <img id="chan3" src="chan3.png" hidden>
+    <img id="remote" src="remote.jpeg" hidden>
+    <img id="wave" src="wave.png" hidden>
+    <div id="container">
+        <div>
+            <label>Nhập kênh cần chuyển:(1,2,3)</label></br>
+            <input id="input1" type="text" value="">
+            <button id="button1" onclick="remoteCC()">Chuyển</button></br></br>
+            <button id="addVolume1" onclick="addVolRe()">Volume+</button>
+            <button id="subVolume1" onclick="subVolRe()">Volume-</button>
+            Volume = <span id="volumeRe"></span>
+        </div>
+        <div id="tiviInput">
+            <label>Nhập kênh cần chuyển:(1,2,3)</label></br>
+            <input id="input2" type="text" value="">
+            <button id="button2" onclick="tiviCC()">Chuyển</button></br></br>
+            <button id="addVolume2" onclick="addVolTivi()">Volume+</button>
+            <button id="subVolume2" onclick="subVolTivi()">Volume-</button>
+            Volume = <span id="volumeTivi"></span>
+        </div>
+    </div>
+    <canvas id="myCanvas" width="1200" height="400"></canvas>
+    <script src="remoteTivi.js">
+    </script>
+</body>
+
+</html>

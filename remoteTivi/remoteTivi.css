@@ -1,0 +1,37 @@
+#container{
+    display: flex;
+}
+label{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#input1,#input2{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: yellow;
+}
+#button1,#button2,#addVolume1,#addVolume2,#subVolume1,#subVolume2{
+    width: 80px;
+    height: 26px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-right: 7px;
+    background-color: moccasin;
+    color: maroon;
+}
+#button1:hover,#button2:hover,#addVolume1:hover,#addVolume2:hover,#subVolume1:hover,#subVolume2:hover{
+      cursor: pointer;
+      background-color: darkorange;
+      color: floralwhite;
+}
+
+#tiviInput{
+    margin-left: 500px;
+}
+canvas{
+    border: solid 2px blueviolet;
+    margin-top: 20px;
+}
