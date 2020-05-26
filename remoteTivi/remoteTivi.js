@@ -42,7 +42,7 @@ class Tivi {
     }
 }
 
-let tivi1 = new Tivi('1',10,'on');
+let tivi1 = new Tivi('1',10,'off');
 let remote1 = new Remote('r2020');
 let remoteInp='';
 let tiviInp='';
